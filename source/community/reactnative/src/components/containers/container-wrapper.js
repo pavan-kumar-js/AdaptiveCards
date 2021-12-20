@@ -129,7 +129,9 @@ export class ContainerWrapper extends React.PureComponent {
                 this.payload.parent['style'] === Enums.ContainerStyle.Default
                     ? 0
                     : -padding;
-            if (this.props.isFirst) {
+            if (this.props.isFirst && this.props.isLast) {
+                computedStyles.push({marginHorizontal: marginValue});
+            } else if (this.props.isFirst) {
                 //First column
                 computedStyles.push({marginLeft: marginValue});
             } else if (this.props.isLast) {
@@ -138,7 +140,7 @@ export class ContainerWrapper extends React.PureComponent {
             }
         } else {
             computedStyles.push({marginHorizontal: -padding});
-        }
+        }   
     }
 
     /**
