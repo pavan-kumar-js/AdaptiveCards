@@ -80,7 +80,7 @@ export class Input extends React.Component {
 						if (!inputArray[this.id])
 							addInputItem(this.id, { value: this.props.value, errorState: this.props.isError });
 						return (
-							<ElementWrapper configManager={this.props.configManager} style={styles.elementWrapper} json={this.payload} isError={this.props.isError} isFirst={this.props.isFirst}>
+							<ElementWrapper configManager={this.props.configManager} style={[styles.elementWrapper, this.styleConfig.inputContainer]} json={this.payload} isError={this.props.isError} isFirst={this.props.isFirst}>
 								<InputLabel configManager={this.props.configManager} isRequired={this.isRequired} label={label} />
 								<TextInput
 									style={this.getComputedStyles(showErrors)}
@@ -121,12 +121,12 @@ export class Input extends React.Component {
 		const { isMultiline } = this;
 
 		// remove placeholderTextColor from styles object before using
-		const { placeholderTextColor, activeColor, inactiveColor, ...stylesObject } = this.styleConfig.input;
+		const { placeholderTextColor, activeColor, inactiveColor, singleLineHeight, multiLineHeight, ...stylesObject } = this.styleConfig.input;
 		let inputComputedStyles = [stylesObject, styles.input];
 		inputComputedStyles.push({ borderColor: this.state.isFocused ? activeColor : inactiveColor })
 		isMultiline ?
-			inputComputedStyles.push(styles.multiLineHeight) :
-			inputComputedStyles.push(styles.singleLineHeight);
+			inputComputedStyles.push(multiLineHeight ? { height: multiLineHeight } : styles.multiLineHeight) :
+			inputComputedStyles.push(singleLineHeight ? { height: singleLineHeight } : styles.singleLineHeight);
 		this.props.isError && showErrors ?
 			inputComputedStyles.push(this.styleConfig.borderAttention) :
 			inputComputedStyles.push(this.styleConfig.inputBorderColor);
@@ -216,7 +216,7 @@ export class Input extends React.Component {
 			let opacityStyle = { opacity: inlineAction.isEnabled == undefined ? 1.0 : inlineAction.isEnabled ? 1.0 : 0.4 };
 			return (
 				<View>
-					<ElementWrapper configManager={this.props.configManager} json={payload} style={styles.elementWrapper} isError={this.props.isError} isFirst={this.props.isFirst}>
+					<ElementWrapper configManager={this.props.configManager} json={payload} style={[styles.elementWrapper, this.styleConfig.inputContainer]} isError={this.props.isError} isFirst={this.props.isFirst}>
 						<InputLabel configManager={this.props.configManager} isRequired={this.isRequired} label={label} />
 						<View style={wrapperStyle} >
 							<TextInput
@@ -330,7 +330,7 @@ const styles = StyleSheet.create({
     },
     elementWrapper: {
         flex: 1,
-        marginVertical: 3
+        marginTop: 3
     },
     input: {
         width: Constants.FullWidth,

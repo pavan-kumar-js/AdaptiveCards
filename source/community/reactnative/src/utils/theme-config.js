@@ -21,6 +21,7 @@ export class ThemeConfig {
         this.inlineAction = new Config(ThemeElement.InlineAction, obj);
         this.inlineActionText = new Config(ThemeElement.InlineActionText, obj);
 		this.actionSet = new Config(ThemeElement.ActionSet, obj);
+		this.inputContainer = new Config(ThemeElement.InputContainer, obj);
     }
 }
 
@@ -184,5 +185,6 @@ export const defaultThemeConfig = {
     },
     inlineAction: {},
     inlineActionText: {},
-	actionSet: {}
+	actionSet: {},
+	inputContainer: {}
 }
