@@ -93,7 +93,7 @@ export class ChoiceSetInput extends React.Component {
 	 * @param {string} value 
 	 */
 	getPickerSelectedValue = (value, addInputItem) => {
-		if (Utils.isNullOrEmpty(value)){
+		if (Utils.isNullOrEmpty(value)) {
 			addInputItem(this.id, { value: value, errorState: this.state.isError });
 			return this.placeholder;
 		}
@@ -157,6 +157,19 @@ export class ChoiceSetInput extends React.Component {
 	}
 
 	/**
+	 * @description Get styles for placeholder/choice selected for picker component.
+	 * @returns {object} - Styles computed based on the payload
+	 */
+	getPickerComponentStyles = (addInputItem) => {
+		// remove placeholderColor from styles object before using
+		const { placeholderColor, ...stylesObject } = this.styleConfig.dropdownText;
+		let inputComputedStyles = [stylesObject];
+		placeholderColor && (this.getPickerSelectedValue(this.state.selectedPickerValue, addInputItem) === this.placeholder) && inputComputedStyles.push({ color: placeholderColor });
+
+		return inputComputedStyles;
+	}
+
+	/**
 	 * @description Renders Picker component as per the json for single choice compact style.
 	 * Renders custom element containing textbox with placeholder/default/selected value with dropdown image.
 	 * It hides the default picker element which shows its own text box in Android and shows custom picker element.
@@ -174,7 +187,7 @@ export class ChoiceSetInput extends React.Component {
 				>
 					<View style={this.styleConfig.dropdown}>
 						<Text
-							style={[this.styleConfig.dropdownText, this.styleConfig.defaultFontConfig]}
+							style={[this.getPickerComponentStyles(addInputItem), this.styleConfig.defaultFontConfig]}
 						>
 							{this.getPickerSelectedValue(this.state.selectedPickerValue,
 								addInputItem)
@@ -197,7 +210,7 @@ export class ChoiceSetInput extends React.Component {
 		let picker = (
 			<Picker
 				mode={'dropdown'}
-				style={(Platform.OS === Constants.PlatformAndroid) && {width:'100%',height:'100%',position:'absolute',opacity:0}}
+				style={(Platform.OS === Constants.PlatformAndroid) && { width: '100%', height: '100%', position: 'absolute', opacity: 0 }}
 				itemStyle={this.styleConfig.picker}
 				selectedValue={this.getPickerInitialValue(addInputItem)}
 				onValueChange={
