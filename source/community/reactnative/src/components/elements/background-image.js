@@ -178,7 +178,7 @@ export class BackgroundImage extends React.Component {
 
     render() {
 		this.backgroundImage = this.props.backgroundImage;
-        this.backgroundImage.url = Utils.getImageUrl(this.backgroundImage.url)
+    this.backgroundImage.url = Utils.getImageUrl(this.backgroundImage.url)
 
 		return (
             <InputContextConsumer>
