@@ -88,6 +88,10 @@ export default payloads = [
     "json": require('./BackgroungImage.RepeatHorizontally.MinHeight.json')
   },
   {
+    "title": "BackgroungImage.Container.DefaultStyle.json",
+    "json": require('./BackgroungImage.Container.DefaultStyle.json')
+  },
+  {
     "title": "Bleeding.ColumnSet.json",
     "json": require('./Bleeding.ColumnSet.json')
   },

@@ -1,0 +1,365 @@
+{
+    "type": "AdaptiveCard",
+    "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+    "version": "1.3",
+    "body": [
+        {
+            "type": "Container",
+            "bleed": true,
+            "backgroundImage": {
+                "url": "https://cdn.sanity.io/images/0e4kwcjv/production/e1d0cca6b423695bc08a82b2f5cf1ed790dfa5fe-5184x2720.png?w=3000&h=1574&fit=crop&fm=webp"
+            },
+            "minHeight": "400px",
+            "items": [
+                {
+                    "type": "Container",
+                    "style": "default",
+                    "items": [
+                        {
+                            "type": "TextBlock",
+                            "text": "reMarkable 2",
+                            "wrap": true,
+                            "height": "stretch",
+                            "spacing": "ExtraLarge",
+                            "size": "ExtraLarge",
+                            "weight": "Bolder"
+                        },
+                        {
+                            "type": "TextBlock",
+                            "text": "The next-generation paper tablet",
+                            "wrap": true,
+                            "size": "Medium"
+                        }
+                    ],
+                    "verticalContentAlignment": "Bottom",
+                    "spacing": "Large",
+                    "minHeight": "40px",
+                    "bleed": true
+                },
+                {
+                    "type": "Container"
+                }
+            ],
+            "verticalContentAlignment": "Bottom",
+            "spacing": "None",
+            "style": "default"
+        },
+        {
+            "type": "Container",
+            "items": [
+                {
+                    "type": "TextBlock",
+                    "text": "Features",
+                    "wrap": true,
+                    "weight": "Bolder",
+                    "size": "Large",
+                    "color": "Accent"
+                },
+                {
+                    "type": "ColumnSet",
+                    "columns": [
+                        {
+                            "type": "Column",
+                            "width": "stretch",
+                            "items": [
+                                {
+                                    "type": "Image",
+                                    "url": "https://cdn.sanity.io/images/0e4kwcjv/production/df506530768d939ccccb680d4f6f146aca0857d4-1664x1057.png?fm=webp"
+                                },
+                                {
+                                    "type": "TextBlock",
+                                    "text": "Built-in eraser\n",
+                                    "wrap": true,
+                                    "weight": "Bolder",
+                                    "size": "Medium",
+                                    "spacing": "Medium"
+                                },
+                                {
+                                    "type": "TextBlock",
+                                    "text": "The brand new Marker Plus comes with a second eraser-sensor in its top end\n\n",
+                                    "wrap": true,
+                                    "spacing": "Small"
+                                }
+                            ],
+                            "style": "default"
+                        },
+                        {
+                            "type": "Column",
+                            "width": "stretch",
+                            "items": [
+                                {
+                                    "type": "Image",
+                                    "url": "https://cdn.sanity.io/images/0e4kwcjv/production/0f0a18e6dcf652c09dfd68d5d613499758b9b5a2-1664x1057.png?fm=webp"
+                                },
+                                {
+                                    "type": "TextBlock",
+                                    "text": "Magnetic accessories\n",
+                                    "wrap": true,
+                                    "size": "Medium",
+                                    "weight": "Bolder",
+                                    "spacing": "Medium"
+                                },
+                                {
+                                    "type": "TextBlock",
+                                    "text": "The Marker and new Book Folio snap to reMarkable magnetically",
+                                    "wrap": true,
+                                    "spacing": "Small"
+                                }
+                            ]
+                        }
+                    ],
+                    "separator": true,
+                    "style": "emphasis",
+                    "bleed": true
+                }
+            ],
+            "style": "emphasis",
+            "spacing": "None",
+            "bleed": true
+        },
+        {
+            "type": "Container",
+            "items": [
+                {
+                    "type": "ColumnSet",
+                    "columns": [
+                        {
+                            "type": "Column",
+                            "width": "stretch",
+                            "items": [
+                                {
+                                    "type": "Image",
+                                    "url": "https://cdn.sanity.io/images/0e4kwcjv/production/4b08f147db9fe0edf846491819bd5ef3141a6f41-1664x1057.png?fm=webp"
+                                },
+                                {
+                                    "type": "TextBlock",
+                                    "text": "USB C connectivity\n",
+                                    "wrap": true,
+                                    "weight": "Bolder",
+                                    "size": "Medium",
+                                    "spacing": "Medium"
+                                },
+                                {
+                                    "type": "TextBlock",
+                                    "text": "For fast file transfer and charging\n\n\n",
+                                    "wrap": true,
+                                    "spacing": "Small"
+                                }
+                            ],
+                            "style": "emphasis"
+                        },
+                        {
+                            "type": "Column",
+                            "width": "stretch",
+                            "items": [
+                                {
+                                    "type": "Image",
+                                    "url": "https://cdn.sanity.io/images/0e4kwcjv/production/df506530768d939ccccb680d4f6f146aca0857d4-1664x1057.png?fm=webp"
+                                },
+                                {
+                                    "type": "TextBlock",
+                                    "text": "3x the battery life",
+                                    "wrap": true,
+                                    "weight": "Bolder",
+                                    "size": "Medium",
+                                    "spacing": "Medium"
+                                },
+                                {
+                                    "type": "TextBlock",
+                                    "text": "Two weeks of battery without recharging\n",
+                                    "wrap": true,
+                                    "spacing": "Small"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "style": "emphasis",
+            "spacing": "None",
+            "bleed": true
+        },
+        {
+            "type": "Container",
+            "style": "default",
+            "backgroundImage": {
+                "url": "https://cdn.sanity.io/images/0e4kwcjv/production/26ac5ec1b958b30c6ff726445378cb562bb4a125-11648x8736.jpg?w=3000&h=2250&fit=crop&fm=webp"
+            },
+            "minHeight": "240px",
+            "items": [
+                {
+                    "type": "Container",
+                    "items": [
+                        {
+                            "type": "TextBlock",
+                            "text": "The only tablet that helps you focus",
+                            "wrap": true,
+                            "weight": "Bolder",
+                            "size": "Medium"
+                        }
+                    ],
+                    "style": "default"
+                },
+                {
+                    "type": "Container",
+                    "minHeight": "25px"
+                }
+            ],
+            "verticalContentAlignment": "Bottom",
+            "bleed": true,
+            "spacing": "None"
+        },
+        {
+            "type": "TextBlock",
+            "text": "Technical specifications",
+            "wrap": true,
+            "weight": "Bolder",
+            "size": "Large",
+            "spacing": "ExtraLarge",
+            "color": "Accent"
+        },
+        {
+            "type": "FactSet",
+            "facts": [
+                {
+                    "title": "Size and weight",
+                    "value": " 187 x 246 x 4.7 mm Approximately 403.5 g (.88 lb)"
+                },
+                {
+                    "title": "Processor",
+                    "value": "1.2 GHz dual core ARM"
+                },
+                {
+                    "title": "Storage and RAM",
+                    "value": " 1 GB LPDDR3 SDRAM 8 GB internal storage"
+                },
+                {
+                    "title": "Second-generation CANVAS display",
+                    "value": "10.3” monochrome digital paper display (no colors) 1872 x 1404 resolution (226 DPI) Partially powered by E Ink Carta technology Multi-point capacitive touch"
+                },
+                {
+                    "title": "Marker",
+                    "value": " No charging, setup, or pairing required Special high-friction pen tip Tilt detection 4096 levels of pressure sensitivity"
+                },
+                {
+                    "title": "Connectivity",
+                    "value": "Wi-Fi 2.4GHz and 5GHz USB-C Accessory port"
+                },
+                {
+                    "title": "Battery",
+                    "value": " Rechargeable (Li-ion) battery  USB-C charging 3000 mAh"
+                },
+                {
+                    "title": "Operating system",
+                    "value": "Codex — A purposely designed Linux-based operating  system for low-latency digital paper displays"
+                },
+                {
+                    "title": "Document support",
+                    "value": "PDF and ePUB"
+                },
+                {
+                    "title": "Other",
+                    "value": "Menu language: English only Note and file syncing between reMarkable tablet and reMarkable apps for MacOS, Windows 10, iOS, and Android"
+                }
+            ],
+            "spacing": "Small",
+            "height": "stretch",
+            "separator": true
+        },
+        {
+            "type": "TextBlock",
+            "text": "A breakthrough technology",
+            "wrap": true,
+            "spacing": "ExtraLarge",
+            "size": "Large",
+            "weight": "Bolder",
+            "color": "Accent"
+        },
+        {
+            "type": "ColumnSet",
+            "columns": [
+                {
+                    "type": "Column",
+                    "width": "stretch",
+                    "items": [
+                        {
+                            "type": "Image",
+                            "url": "https://cdn-icons-png.flaticon.com/128/2919/2919751.png",
+                            "width": "20px",
+                            "height": "20px",
+                            "horizontalAlignment": "Center"
+                        },
+                        {
+                            "type": "TextBlock",
+                            "text": "A paper-like surface",
+                            "wrap": true,
+                            "horizontalAlignment": "Center",
+                            "spacing": "Medium"
+                        }
+                    ]
+                },
+                {
+                    "type": "Column",
+                    "width": "stretch",
+                    "items": [
+                        {
+                            "type": "Image",
+                            "url": "https://cdn-icons-png.flaticon.com/128/2260/2260719.png",
+                            "width": "20px",
+                            "height": "20px",
+                            "horizontalAlignment": "Center"
+                        },
+                        {
+                            "type": "TextBlock",
+                            "text": "Incredible responsiveness\n",
+                            "wrap": true,
+                            "horizontalAlignment": "Center",
+                            "spacing": "Medium"
+                        }
+                    ]
+                },
+                {
+                    "type": "Column",
+                    "width": "stretch",
+                    "items": [
+                        {
+                            "type": "Image",
+                            "url": "https://cdn-icons-png.flaticon.com/128/992/992689.png",
+                            "horizontalAlignment": "Center",
+                            "width": "20px",
+                            "height": "20px"
+                        },
+                        {
+                            "type": "TextBlock",
+                            "text": "Minimal pen-to-ink distance\n",
+                            "wrap": true,
+                            "spacing": "Medium",
+                            "horizontalAlignment": "Center"
+                        }
+                    ]
+                },
+                {
+                    "type": "Column",
+                    "width": "stretch",
+                    "items": [
+                        {
+                            "type": "Image",
+                            "url": "https://cdn-icons-png.flaticon.com/128/606/606797.png",
+                            "width": "20px",
+                            "height": "20px",
+                            "horizontalAlignment": "Center"
+                        },
+                        {
+                            "type": "TextBlock",
+                            "text": "Crisp black ink\n",
+                            "wrap": true,
+                            "horizontalAlignment": "Center",
+                            "spacing": "Medium"
+                        }
+                    ]
+                }
+            ],
+            "spacing": "Medium"
+        }
+    ]
+}
